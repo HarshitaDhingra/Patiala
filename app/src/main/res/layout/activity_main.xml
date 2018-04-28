@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.patiala.MainActivity"
+    android:background="#E8EAF6"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/patiala"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:src="@drawable/front"
+        android:onClick="Patiala" />
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/PublicAttractions"
+                android:layout_height="66dp"
+                android:layout_width="match_parent"
+                android:text="Public Attraction"
+                android:background="@color/Attractions"
+                style="@style/CategoryStyle"/>
+         <TextView
+                android:id="@+id/HistoricalImportance"
+                android:layout_height="66dp"
+                android:layout_width="match_parent"
+                android:text="Shopping Hub"
+                android:background="@color/Shop"
+                style="@style/CategoryStyle"/>
+        <TextView
+                android:id="@+id/Hotels"
+                android:layout_height="66dp"
+                android:layout_width="match_parent"
+                android:text="Hotels"
+                android:background="@color/Stay"
+                style="@style/CategoryStyle"/>
+        <TextView
+                android:id="@+id/Restaurants"
+                android:layout_height="66dp"
+                android:layout_width="match_parent"
+                android:text="Restaurants"
+                android:background="@color/Food"
+                style="@style/CategoryStyle"/>
+        </LinearLayout>
+</LinearLayout>
